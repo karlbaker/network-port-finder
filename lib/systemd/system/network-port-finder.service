@@ -1,0 +1,11 @@
+[Unit]
+Description=Network Port Finder
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python '/network-port-finder/network-port-finder.py'
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
