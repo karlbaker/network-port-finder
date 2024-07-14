@@ -25,7 +25,7 @@ There are plenty of professional tools that can provide this type of service, bu
 
 **Packages**
  - lldpad v0.5.7
- - bmc2835 v1.71 (included in repo)
+ - bmc2835 v1.71 (required files from this is included in repo)
  - Python v3.9.2
  - PiSugar Power Manager
 
@@ -76,3 +76,17 @@ There will be (3) different status types:
 ![NO LLDP INFORMATION AVAILABLE Example Picture](https://i.imgur.com/nBBZ0Q4.jpeg)
  3. **LLDP Information w/ data** - This indicates the finder did pull the LLDP information from the remote device and will display remote device's MGMT IP, Hostname, and the connected port. 
 ![LLDP Information w/ data Example Picture](https://i.imgur.com/IZEL82G.jpeg)
+
+## Network Port Finder Case - STL 3D Print Files
+
+The design is fairly rudimentary. If I was to remake the case I would try to keep it with in the 1RU space (1.75") and shrink down the thickness of the case. 
+
+- The (4) M2 4mm x 3.5mm Female Thread Knurled Nut will be pushed into the cavities of the base. I used a heat source on the nut for the initial insertion then used a clamp to make the nut flush to the base.
+- The (4) M2x6 Screw will be used to secure the lid to the base. Be careful: Tightening the screw too much will cause the nut to come out of the base.
+ 
+### Lid
+![Network Port Finder Lid](https://i.imgur.com/6fla0HW.png)
+### Base
+![Network Port Finder Base](https://i.imgur.com/fzmZCx0.png)
+### Slider Switch - Coming soon.
+Currently there is no slider switch to turn on/off the device. The left opening on the *base* picture is where the slider will go. The PiSugar can still be turned on/off through the opening. 
