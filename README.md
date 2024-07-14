@@ -87,6 +87,6 @@ The design is fairly rudimentary. If I was to remake the case I would try to kee
 ### Lid
 ![Network Port Finder Lid](https://i.imgur.com/6fla0HW.png)
 ### Base
-![Network Port Finder Base](https://i.imgur.com/xnOyNZ3.png)
-### Slider Power Switch - Coming soon.
-Currently there is no slider power switch to turn on/off the device. The PiSugar can still be turned on/off through the opening. 
+![Network Port Finder Base](https://i.imgur.com/tbahiS0.png)
+### Slider Switch - Coming soon.
+Currently there is no slider power switch to turn on/off the device. The PiSugar can still be turned on/off through the opening.
