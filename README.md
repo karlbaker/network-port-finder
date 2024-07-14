@@ -1,7 +1,7 @@
 # Network Port Finder
 
 ## Overview
-The purpose of this script and associated to files is to create a small portable network device to identify a network port network switch and the switch's associated port. This is done by leveraging the switch's Link Layer Discovery Protocol (LLDP) to provide that information.
+The purpose of this script and associated to files is to create a small portable network device to identify the remote network device and it's associated port. This is done by leveraging the switch's Link Layer Discovery Protocol (LLDP) to provide that information.
 
 ## The Why
 There are plenty of professional tools that can provide this type of service, but they tend to be expensive and in limited quantity within an organization. This provides a quick solution when you're in a pinch trying to trace down mislabeled or unlabeled ports in rooms or patch panels. 
