@@ -96,7 +96,7 @@ def main():
     width, height = disp.width, disp.height
     image = Image.new('1', (width, height))
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype('/lldp-check/04B_08__.TTF', 8)
+    font = ImageFont.truetype('/network-port-finder/04B_08__.TTF', 8)
 
     battery_level = get_battery_status()
     battery_position = (width - 12, 0)
