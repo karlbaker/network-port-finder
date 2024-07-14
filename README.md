@@ -19,6 +19,7 @@ There are plenty of professional tools that can provide this type of service, bu
 
 ## Software Requirements / Tested Baseline
 *Note: Newer version of the listed software may work fine, but have not been tested.*
+
  **OS**
  - Raspbian GNU/Linux 11 (bullseye)"
 
@@ -48,12 +49,14 @@ There are plenty of professional tools that can provide this type of service, bu
 There are a few packages that will need to be installed before starting the service. 
 
 **Link Layer Discovery Protocol (LLDP) agent daemon**
+
 This daemon will pull the LLDP information from your infrastructure's network device. Use the following commands to install, start and enable the daemon at startup.
 - `sudo apt-get install lldpad`
 - `sudo systemctl start lldpad.service`
 - `sudo systemctl enable lldpad.service`
 
 **PiSugar Power Manager**
+
 This script will load the PiSugar Power Manager that will provide a continuous status of the PiSugar's battery life. Use the following command to install and start the power manager.
 - `curl http://cdn.pisugar.com/release/pisugar-power-manager.sh | sudo bash`
 
