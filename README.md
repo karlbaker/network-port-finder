@@ -19,12 +19,14 @@ There are plenty of professional tools that can provide this type of service, bu
 
 ## Software Requirements / Tested Baseline
 *Note: Newer version of the listed software may work fine, but have not been tested.*
- - OS: Raspbian GNU/Linux 11 (bullseye)"
- - Packages:
- -- lldpad v0.5.7
- -- bmc2835 v1.71 (included in repo)
- -- Python v3.9.2
- -- PiSugar Power Manager
+ **OS**
+ - Raspbian GNU/Linux 11 (bullseye)"
+
+**Packages**
+ - lldpad v0.5.7
+ - bmc2835 v1.71 (included in repo)
+ - Python v3.9.2
+ - PiSugar Power Manager
 
 ## OS File Structure
 ```bash
