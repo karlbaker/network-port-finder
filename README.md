@@ -19,7 +19,7 @@ There are plenty of professional tools that can provide this type of service, bu
 
 ## Software Requirements / Tested Baseline
 *Note: Newer version of the listed software may work fine, but have not been tested.*
-
+ 
  **OS**
  - Raspbian GNU/Linux 11 (bullseye)"
 
@@ -49,14 +49,12 @@ There are plenty of professional tools that can provide this type of service, bu
 There are a few packages that will need to be installed before starting the service. 
 
 **Link Layer Discovery Protocol (LLDP) agent daemon**
-
 This daemon will pull the LLDP information from your infrastructure's network device. Use the following commands to install, start and enable the daemon at startup.
 - `sudo apt-get install lldpad`
 - `sudo systemctl start lldpad.service`
 - `sudo systemctl enable lldpad.service`
 
 **PiSugar Power Manager**
-
 This script will load the PiSugar Power Manager that will provide a continuous status of the PiSugar's battery life. Use the following command to install and start the power manager.
 - `curl http://cdn.pisugar.com/release/pisugar-power-manager.sh | sudo bash`
 
@@ -66,3 +64,15 @@ The daemon would need to be reloaded using `sudo systemctl daemon-reload` comman
 Use the following commands to start and enable the service at start up.
 - `sudo systemctl start network-port-finder.service`
 - `sudo systemctl enable network-port-finder.service`
+
+## LCD Display
+When the daemon is started the LCD screen will display the port and battery status. 
+
+There will be (3) different status types:
+
+ 1. **ETH0 NOT CONNECTED** - This indicates there is no network connection to the finder.
+ ![ETH0 NOT CONNECTED Example Picture](https://i.imgur.com/yL0fxYP.jpeg)
+ 2. **NO LLDP INFORMATION AVAILABLE** - This indicates the finder's network port has a connection, but no LLDP information is being reported. This status usually occurs when finder is initializing the connection or the remote device has LLDP turned off or doesn't support it. 
+![NO LLDP INFORMATION AVAILABLE Example Picture](https://i.imgur.com/nBBZ0Q4.jpeg)
+ 3. **LLDP Information w/ data** - This indicates the finder did pull the LLDP information from the remote device and will display remote device's MGMT IP, Hostname, and the connected port. 
+![LLDP Information w/ data Example Picture](https://i.imgur.com/IZEL82G.jpeg)
