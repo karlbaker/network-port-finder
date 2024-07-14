@@ -72,12 +72,11 @@ There will be (3) different status types:
 
  1. **ETH0 NOT CONNECTED** - This indicates there is no network connection to the finder.
  ![ETH0 NOT CONNECTED Example Picture](https://i.imgur.com/yL0fxYP.jpeg)
- 2. **NO LLDP INFORMATION AVAILABLE** - This indicates the finder's network port has a connection, but no LLDP information is being reported. This status usually occurs when finder is initializing the connection or the remote device has LLDP turned off or doesn't support it.  
+ 2. **NO LLDP INFORMATION AVAILABLE** - This indicates the finder's network port has a connection, but no LLDP information is being reported. This status usually occurs when finder is initializing the connection or the remote device has LLDP turned off or doesn't support it. 
 ![NO LLDP INFORMATION AVAILABLE Example Picture](https://i.imgur.com/nBBZ0Q4.jpeg)
  3. **LLDP Information w/ data** - This indicates the finder did pull the LLDP information from the remote device and will display remote device's MGMT IP, Hostname, and the connected port. 
  *Note: The text will scroll to the left if the LLDP information is too long for the screen (<=25 characters).*
 ![LLDP Information w/ data Example Picture](https://i.imgur.com/IZEL82G.jpeg)
-
 ## Network Port Finder Case - STL 3D Print Files
 
 The design is fairly rudimentary. If I was to remake the case I would try to keep it with in the 1RU space (1.75") and shrink down the thickness of the case. 
@@ -88,6 +87,6 @@ The design is fairly rudimentary. If I was to remake the case I would try to kee
 ### Lid
 ![Network Port Finder Lid](https://i.imgur.com/6fla0HW.png)
 ### Base
-![Network Port Finder Base](https://i.imgur.com/fzmZCx0.png)
-### Slider Switch - Coming soon.
-Currently there is no slider switch to turn on/off the device. The left opening on the *base* picture is where the slider will go. The PiSugar can still be turned on/off through the opening. 
+![Network Port Finder Base](https://i.imgur.com/xnOyNZ3.png)
+### Slider Power Switch - Coming soon.
+Currently there is no slider power switch to turn on/off the device. The PiSugar can still be turned on/off through the opening. 
