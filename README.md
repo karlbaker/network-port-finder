@@ -75,6 +75,7 @@ There will be (3) different status types:
  2. **NO LLDP INFORMATION AVAILABLE** - This indicates the finder's network port has a connection, but no LLDP information is being reported. This status usually occurs when finder is initializing the connection or the remote device has LLDP turned off or doesn't support it. 
 ![NO LLDP INFORMATION AVAILABLE Example Picture](https://i.imgur.com/nBBZ0Q4.jpeg)
  3. **LLDP Information w/ data** - This indicates the finder did pull the LLDP information from the remote device and will display remote device's MGMT IP, Hostname, and the connected port. 
+ 
  *Note: The text will scroll to the left if the LLDP information is too long for the screen (<=25 characters).*
 ![LLDP Information w/ data Example Picture](https://i.imgur.com/IZEL82G.jpeg)
 ## Network Port Finder Case - STL 3D Print Files
