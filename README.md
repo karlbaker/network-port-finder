@@ -15,7 +15,7 @@ There are plenty of professional tools that can provide this type of service, bu
  - (1) Waveshare Ethernet/USB HUB HAT Expansion Board
  - (1) 3D Printed case (See STL folder)
  - (4) M2 4mm x 3.5mm Female Thread Knurled Nut
- - (4) M2x6 Screw
+ - (4) M2x10 Screw
 
 ## Software Requirements / Tested Baseline
 
@@ -125,7 +125,7 @@ There will be (3) different status types:
 The design is fairly rudimentary. If I was to remake the case I would try to keep it with in the 1RU space (1.75") and shrink down the thickness of the case. 
 
 - The (4) M2 4mm x 3.5mm Female Thread Knurled Nut will be pushed into the cavities of the base. I used a heat source on the nut for the initial insertion then used a clamp to make the nut flush to the base.
-- The (4) M2x6 Screw will be used to secure the lid to the base. Be careful: Tightening the screw too much will cause the nut to come out of the base.
+- The (4) M2x10 Screw will be used to secure the lid to the base. Be careful: Tightening the screw too much will cause the nut to come out of the base.
  
 ### Lid
 ![Network Port Finder Lid](https://i.imgur.com/6fla0HW.png)
