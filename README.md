@@ -63,15 +63,17 @@ This daemon will pull the LLDP information from your infrastructure's network de
 ### **PiSugar Power Manager**
 
 This script will load the PiSugar Power Manager that will provide a continuous status of the PiSugar's battery life. Use the following command to install and start the power manager.
-- `curl http://cdn.pisugar.com/release/pisugar-power-manager.sh | sudo bash`
-- Installation Steps - You'll be prompted with several steps to setup the Power Manager application.
--- Select the appropriate PiSugar 2 model (mine is the PiSugar 2-LED Version)
--- Enter in the HTTP authentication username (not needed for our purpose but its a part of the installation).
--- Enter in the HTTP authentication password 
--- Press **[Enter]** at the **Configuring pisugar-server** prompt.
--- Select the appropriate PiSugar 2 model at the **Configuring pisugar-poweroff** prompt. 
--- PiSugar Power Manager installation will be complete at this point.
 
+- `curl http://cdn.pisugar.com/release/pisugar-power-manager.sh | sudo bash`
+
+Installation Steps - You'll be prompted with several steps to setup the Power Manager application.
+
+- Select the appropriate PiSugar 2 model (mine is the PiSugar 2-LED Version)
+- Enter in the HTTP authentication username (not needed for our purpose but its a part of the installation).
+- Enter in the HTTP authentication password 
+- Press **[Enter]** at the **Configuring pisugar-server** prompt.
+- Select the appropriate PiSugar 2 model at the **Configuring pisugar-poweroff** prompt. 
+- PiSugar Power Manager installation will be complete at this point.
 ### **OLED Display Setup**
 
 Run the following commands to setup the OLED display:
