@@ -18,6 +18,7 @@ There are plenty of professional tools that can provide this type of service, bu
  - (4) M2x6 Screw
 
 ## Software Requirements / Tested Baseline
+
 *Note: Newer version of the listed software may work fine, but have not been tested.*
  
  **OS**
@@ -30,6 +31,9 @@ There are plenty of professional tools that can provide this type of service, bu
  - PiSugar Power Manager
 
 ## OS File Structure
+
+Copy the lib and network-port-finder directories to the root of your filesystem.
+
 ```bash
 ├── /network-port-finder/
 │   ├── network-port-finder.py
@@ -46,17 +50,51 @@ There are plenty of professional tools that can provide this type of service, bu
 │   │   │   ├── network-port-finder.service
 ```
 ## Preparing the OS
+
 There are a few packages that will need to be installed before starting the service. 
 
-**Link Layer Discovery Protocol (LLDP) agent daemon**
+### **Link Layer Discovery Protocol (LLDP) agent daemon**
+
 This daemon will pull the LLDP information from your infrastructure's network device. Use the following commands to install, start and enable the daemon at startup.
-- `sudo apt-get install lldpad`
+- `sudo apt-get install -y lldpad`
 - `sudo systemctl start lldpad.service`
 - `sudo systemctl enable lldpad.service`
 
-**PiSugar Power Manager**
+### **PiSugar Power Manager**
+
 This script will load the PiSugar Power Manager that will provide a continuous status of the PiSugar's battery life. Use the following command to install and start the power manager.
 - `curl http://cdn.pisugar.com/release/pisugar-power-manager.sh | sudo bash`
+- Installation Steps - You'll be prompted with several steps to setup the Power Manager application.
+-- Select the appropriate PiSugar 2 model (mine is the PiSugar 2-LED Version)
+-- Enter in the HTTP authentication username (not needed for our purpose but its a part of the installation).
+-- Enter in the HTTP authentication password 
+-- Press **[Enter]** at the **Configuring pisugar-server** prompt.
+-- Select the appropriate PiSugar 2 model at the **Configuring pisugar-poweroff** prompt. 
+-- PiSugar Power Manager installation will be complete at this point.
+
+### **OLED Display Setup**
+
+Run the following commands to setup the OLED display:
+
+**Enable SPI Interface**
+
+`sudo raspi-config`
+`Choose Interfacing Options -> P4 SPI -> Select Yes`
+`sudo reboot` 
+
+**Install BCM2835 Library**
+`wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz`
+`tar zxvf bcm2835-1.71.tar.gz `
+`cd bcm2835-1.71/`
+`sudo ./configure && sudo make && sudo make check && sudo make install`
+
+**Python Libraries**
+`sudo apt-get update`
+`sudo apt-get install python3-pip`
+`sudo apt-get install python3-pil`
+`sudo apt-get install python3-numpy`
+`sudo pip3 install spidev`
+`sudo pip3 install smbus`
 
 ## Start Network Port Finder Service
 The daemon would need to be reloaded using `sudo systemctl daemon-reload` command. 
