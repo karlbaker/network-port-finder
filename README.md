@@ -78,23 +78,23 @@ Run the following commands to setup the OLED display:
 
 **Enable SPI Interface**
 
-`sudo raspi-config`
-`Choose Interfacing Options -> P4 SPI -> Select Yes`
-`sudo reboot` 
+- `sudo raspi-config`
+- `Choose Interfacing Options -> P4 SPI -> Select Yes`
+- `sudo reboot` 
 
 **Install BCM2835 Library**
-`wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz`
-`tar zxvf bcm2835-1.71.tar.gz `
-`cd bcm2835-1.71/`
-`sudo ./configure && sudo make && sudo make check && sudo make install`
+- `wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz`
+- `tar zxvf bcm2835-1.71.tar.gz `
+- `cd bcm2835-1.71/`
+- `sudo ./configure && sudo make && sudo make check && sudo make install`
 
 **Python Libraries**
-`sudo apt-get update`
-`sudo apt-get install python3-pip`
-`sudo apt-get install python3-pil`
-`sudo apt-get install python3-numpy`
-`sudo pip3 install spidev`
-`sudo pip3 install smbus`
+- `sudo apt-get update`
+- `sudo apt-get install python3-pip`
+- `sudo apt-get install python3-pil`
+- `sudo apt-get install python3-numpy`
+- `sudo pip3 install spidev`
+- `sudo pip3 install smbus`
 
 ## Start Network Port Finder Service
 The daemon would need to be reloaded using `sudo systemctl daemon-reload` command. 
