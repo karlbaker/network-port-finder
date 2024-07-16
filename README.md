@@ -56,6 +56,7 @@ There are a few packages that will need to be installed before starting the serv
 ### **Link Layer Discovery Protocol (LLDP) agent daemon**
 
 This daemon will pull the LLDP information from your infrastructure's network device. Use the following commands to install, start and enable the daemon at startup.
+- `sudo apt-get install -y lldpd`
 - `sudo apt-get install -y lldpad`
 - `sudo systemctl start lldpad.service`
 - `sudo systemctl enable lldpad.service`
@@ -74,6 +75,7 @@ Installation Steps - You'll be prompted with several steps to setup the Power Ma
 - Press **[Enter]** at the **Configuring pisugar-server** prompt.
 - Select the appropriate PiSugar 2 model at the **Configuring pisugar-poweroff** prompt. 
 - PiSugar Power Manager installation will be complete at this point.
+
 ### **OLED Display Setup**
 
 Run the following commands to setup the OLED display:
