@@ -8,14 +8,14 @@ There are plenty of professional tools that can provide this type of service, bu
 
 ## Build of Materials (BoM)
 
- - (1) Raspberry Pi Zero 2 w/ Pre Soldered Header
- - (1) 32GB microSD
- - (1) Pisugar2
- - (1) Waveshare 2.23 inch OLED Display HAT
- - (1) Waveshare Ethernet/USB HUB HAT Expansion Board
+ - (1) [Raspberry Pi Zero](https://amzn.to/4d5CCtM)
+ - (1) [32GB microSD](https://amzn.to/4f9ku40)
+ - (1) [Pisugar2](https://amzn.to/4d5CCtM)
+ - (1) [Waveshare 2.23 inch OLED Display HAT](https://amzn.to/4bOJ8Er)
+ - (1) [Waveshare Ethernet/USB HUB HAT Expansion Board](https://amzn.to/3zHymCt)
  - (1) 3D Printed case (See STL folder)
- - (4) M2 4mm x 3.5mm Female Thread Knurled Nut
- - (4) M2x10 Screw
+ - (4) M2 4mm x 3.5mm Female Thread Knurled Nut - [This is the set I'm using](https://amzn.to/3Y3iiVF)
+ - (4) M2x10 Screw - [This is the set I'm using](https://amzn.to/3y2eDNu)
 
 ## Software Requirements / Tested Baseline
 
@@ -25,7 +25,7 @@ There are plenty of professional tools that can provide this type of service, bu
  - Raspbian GNU/Linux 11 (bullseye)"
 
 **Packages**
- - lldpad v0.5.7
+ - lldpd v1.0.11
  - bmc2835 v1.71
  - Python v3.9.2
  - PiSugar Power Manager
