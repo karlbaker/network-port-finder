@@ -10,7 +10,7 @@ There are plenty of professional tools that can provide this type of service, bu
 
  - (1) [Raspberry Pi Zero](https://amzn.to/4d5CCtM)
  - (1) [32GB microSD](https://amzn.to/4f9ku40)
- - (1) [Pisugar2](https://amzn.to/4d5CCtM)
+ - (1) [Pisugar2](https://amzn.to/3y4ljdR)
  - (1) [Waveshare 2.23 inch OLED Display HAT](https://amzn.to/4bOJ8Er)
  - (1) [Waveshare Ethernet/USB HUB HAT Expansion Board](https://amzn.to/3zHymCt)
  - (1) 3D Printed case (See STL folder)
