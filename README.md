@@ -26,7 +26,7 @@ There are plenty of professional tools that can provide this type of service, bu
 
 **Packages**
  - lldpad v0.5.7
- - bmc2835 v1.71 (included in repo)
+ - bmc2835 v1.71
  - Python v3.9.2
  - PiSugar Power Manager
 
@@ -57,9 +57,6 @@ There are a few packages that will need to be installed before starting the serv
 
 This daemon will pull the LLDP information from your infrastructure's network device. Use the following commands to install, start and enable the daemon at startup.
 - `sudo apt-get install -y lldpd`
-- `sudo apt-get install -y lldpad`
-- `sudo systemctl start lldpad.service`
-- `sudo systemctl enable lldpad.service`
 
 ### **PiSugar Power Manager**
 
@@ -83,22 +80,14 @@ Run the following commands to setup the OLED display:
 **Enable SPI Interface**
 
 - `sudo raspi-config`
-- `Choose Interfacing Options -> P4 SPI -> Select Yes`
+- `Choose Interfacing Options -> SPI -> Select <Yes> to enable`
 - `sudo reboot` 
 
 **Install BCM2835 Library**
 - `wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.71.tar.gz`
-- `tar zxvf bcm2835-1.71.tar.gz `
+- `tar zxvf bcm2835-1.71.tar.gz`
 - `cd bcm2835-1.71/`
 - `sudo ./configure && sudo make && sudo make check && sudo make install`
-
-**Python Libraries**
-- `sudo apt-get update`
-- `sudo apt-get install python3-pip`
-- `sudo apt-get install python3-pil`
-- `sudo apt-get install python3-numpy`
-- `sudo pip3 install spidev`
-- `sudo pip3 install smbus`
 
 ## Start Network Port Finder Service
 The daemon would need to be reloaded using `sudo systemctl daemon-reload` command. 
