@@ -49,7 +49,14 @@ Copy the lib and network-port-finder directories to the root of your filesystem.
 │   │   ├── system/
 │   │   │   ├── network-port-finder.service
 ```
-## Preparing the OS
+## Installing the service
+You can either run the `setup.sh` installation script or run through the manual setup that is outlined under the `Manual Installation` section on this README file.
+
+To run through the installation script perform a git clone of this repo, navigate into the main directory then run `sudo ./setup` to kick off the installation.
+
+- *Note: The PiSugar Power Manager is still a manual process, run through the prompts and reboot your Pi once complete. It is important that a reboot occurs to get SPI working.* 
+
+## Manual Installation
 
 There are a few packages that will need to be installed before starting the service. 
 
