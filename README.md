@@ -20,7 +20,6 @@ There are plenty of professional tools that can provide this type of service, bu
 ## Software Requirements / Tested Baseline
 
 *Note: Newer version of the listed software may work fine, but have not been tested.*
- 
  **OS**
  - Raspbian GNU/Linux 11 (bullseye)"
 
@@ -120,12 +119,18 @@ There will be (3) different status types:
 
 The design is fairly rudimentary. If I was to remake the case I would try to keep it with in the 1RU space (1.75") and shrink down the thickness of the case. 
 
-- The (4) M2 4mm x 3.5mm Female Thread Knurled Nut will be pushed into the cavities of the base. I used a heat source on the nut for the initial insertion then used a clamp to make the nut flush to the base.
-- The (4) M2x10 Screw will be used to secure the lid to the base. Be careful: Tightening the screw too much will cause the nut to come out of the base.
- 
+- Lid: The (4) M2x10 Screw will be used to secure the lid to the base. Be careful: Tightening the screw too much will cause the nut to come out of the base.
+- Base: The (4) M2 4mm x 3.5mm Female Thread Knurled Nut will be pushed into the cavities of the base. I used a heat source on the nut for the initial insertion then used a clamp to make the nut flush to the base.
+- Slider: Use (1) M2x10 Screw to combine the two parts together. Insert 'Part B' into the inside and Part A will line up with Part B hole on the outside with the screw combining the two pieces. 
+
 ### Lid
 ![Network Port Finder Lid](https://i.imgur.com/6fla0HW.png)
 ### Base
 ![Network Port Finder Base](https://i.imgur.com/tbahiS0.png)
-### Slider Switch - Coming soon.
-Currently there is no slider power switch to turn on/off the device. The PiSugar can still be turned on/off through the opening.
+
+### Slider Switch
+
+Part A
+![Network Port Finder Slider Part A](https://i.imgur.com/Shx8q6A.png)
+Part B
+![Network Port Finder Slider Part B](https://i.imgur.com/jzfXXoq.png)
