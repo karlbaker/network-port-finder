@@ -131,6 +131,9 @@ The design is fairly rudimentary. If I was to remake the case I would try to kee
 ### Slider Switch
 
 Part A
+
 ![Network Port Finder Slider Part A](https://i.imgur.com/Shx8q6A.png)
+
 Part B
+
 ![Network Port Finder Slider Part B](https://i.imgur.com/jzfXXoq.png)
